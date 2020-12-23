@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nanni.star.radiotv">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+     <activity android:name="nanni.star.radiotv.SplashScreenActivity"
+         android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="nanni.star.radiotv.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="nanni.star.radiotv.Activities.LiveRadioActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="nanni.star.radiotv.Activities.LiveTVActivity"
+            android:configChanges="screenSize">
+        </activity>
+
+        <activity
+            android:name="nanni.star.radiotv.Activities.ContactUsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="nanni.star.radiotv.Activities.NewsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+</manifest>
